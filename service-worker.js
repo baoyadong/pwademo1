@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/index.html","fc620c64293a2f96d1e31e72fbbde4f5"],["/static/css/app.280ad05b4dadc5646b01d45cbc480f73.css","280ad05b4dadc5646b01d45cbc480f73"],["/static/css/reset.css","c21d5f03d8bd08f48e77b40aa2ee00f1"],["/static/js/app.d82949c74f031a3d0dab.js","c708b80ca2f0008288ffad27272a7d26"],["/static/js/manifest.2b72b19214a4e5caf17e.js","30a9d70eaffb32911c9f949d736685c2"],["/static/js/vendor.6a63dc531c79626f8b13.js","f1b899bc49eb30734435b9b8974feec8"]];
+var precacheConfig = [["/index.html","cc925bab83f3e024067bba2573f28243"],["/static/css/app.280ad05b4dadc5646b01d45cbc480f73.css","280ad05b4dadc5646b01d45cbc480f73"],["/static/css/reset.css","c21d5f03d8bd08f48e77b40aa2ee00f1"],["/static/js/app.0e046b3777b605a7f7e0.js","611b7cb65ff68d90087b8ede80fdf389"],["/static/js/manifest.b9dee957e3df82499175.js","c8ebf118aca2d4ec2983ba4fcf4d3a50"],["/static/js/vendor.1017399429ef011280e3.js","2050e2bdda20feb53a38dd2a5573013e"]];
 var cacheName = 'sw-precache-v3-sw-precache-webpack-plugin-' + (self.registration ? self.registration.scope : '');
 
 
@@ -229,7 +229,7 @@ self.addEventListener('fetch', function(event) {
 
     // If shouldRespond is still false, check to see if this is a navigation
     // request, and if so, whether the URL matches navigateFallbackWhitelist.
-    var navigateFallback = 'https://www.xiaohuochai.cc';
+    var navigateFallback = '/index.html';
     if (!shouldRespond &&
         navigateFallback &&
         (event.request.mode === 'navigate') &&
